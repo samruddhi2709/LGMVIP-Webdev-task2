@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    background: linear-gradient(to right,#bb0d8f, #801252);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wholecontainer {
+    background-size: cover;
+    /* text-align: -webkit-center; */
+}
+
+.container {
+    height: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 15px;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    justify-content: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .btn {
+    display: none;
+    float: right;
+    display: block;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: crimson;
+    padding: 12px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 1.5px white;
+    width: 10%;
+}
+
+.topnav .btn:hover {
+    color: black;
+}
+
+/* When the screen is less than 600 pixels wide */
+@media screen and (max-width: 600px) {
+    .topnav a.btn {
+        color: #f2f2f2;
+        float: right;
+        display: block;
+        width: 20%;
+    }
+
+    .container {
+        height: 100px;
+        text-align: -webkit-center;
+    }
+    .img{
+        width: 300px;
+        margin-right: 80px;
+    }
+}
+
+.img {
+   margin-top: 130px;
+   text-align: center;
+}
